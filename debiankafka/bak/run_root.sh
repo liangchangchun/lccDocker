@@ -1,0 +1,1 @@
+docker run -itd -p 9092:9092 -v /data/lccDocker/debiankafka/data:/usr/local/kafka/data -v /data/lccDocker/debiankafka/config:/usr/local/kafka/config -v /data/lccDocker/debiankafka/logs:/usr/local/kafka/logs --link zookeeper_root:zookeeper --name kafka_root liangchangchun/debiankafka:v2
